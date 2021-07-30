@@ -3,8 +3,9 @@
 :root {
   --primary-clr: hsl(0, 0%, 100%);
   --secondary-clr: hsla(209, 100%, 55%, 1);
-  --hover-clr: hsla(207, 100%, 63%, 1);
-  --loading-clr: hsla(209, 100%, 55%, 0.65);
+  --btn-hover-clr: hsla(207, 100%, 63%, 1);
+  --btn-loading-clr: hsla(209, 100%, 55%, 0.65);
+  --btn-pressed-clr: hsla(211, 92%, 44%, 1);
   --input-shadow-clr: hsla(209, 100%, 55%, 0.5);
   --input-border-clr: hsla(0, 0%, 85%, 1);
   --box-shadow-clr: rgba(0, 0, 0, 0.14);
@@ -37,10 +38,6 @@
 
 .W\(P320\) {
   width: 320px;
-}
-
-.W\(P97\) {
-  width: 98px;
 }
 
 .W\(P16\) {
@@ -113,6 +110,7 @@
 .D-None {
   display: none;
 }
+
 .D-Block {
   display: block;
 }
@@ -165,19 +163,19 @@
 }
 
 .h\:Btn:hover {
-  background-color: var(--hover-clr);
+  background-color: var(--btn-hover-clr);
 }
 
 .f\:Btn:focus {
-  background-color: var(--hover-clr);
-}
-
-.h\:Input:hover {
-  border: 1px solid var(--hover-clr);
+  background-color: var(--btn-hover-clr);
 }
 
 .a\:Btn:active {
-  background: hsla(211, 92%, 44%, 1);
+  background: var(--btn-pressed-clr);
+}
+
+.h\:Input:hover {
+  border: 1px solid var(--btn-hover-clr);
 }
 
 .f\:Input:focus {
@@ -241,6 +239,7 @@
 .Border-0 {
   border: none;
 }
+
 .Border-1 {
   border: 1px solid var(--input-border-clr);
 }

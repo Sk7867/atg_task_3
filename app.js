@@ -1,6 +1,5 @@
 const btn = document.querySelector('button');
 const loader = document.querySelector('#loader');
-// const btnContainer = document.querySelector('#button_Container');
 
 btn.addEventListener('click', () => {
   loader.classList.remove('D-None');
