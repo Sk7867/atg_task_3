@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --primary-clr: hsl(0, 0%, 100%);
+  --secondary-clr: hsla(209, 100%, 55%, 1);
+  --hover-clr: hsla(207, 100%, 63%, 1);
+  --loading-clr: hsla(209, 100%, 55%, 0.65);
+  --input-shadow-clr: hsla(209, 100%, 55%, 0.5);
+  --input-border-clr: hsla(0, 0%, 85%, 1);
+  --box-shadow-clr: rgba(0, 0, 0, 0.14);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+/* ---------------Height/Width--------------- */
+/* ---------------Width--------------- */
+.Min-W-100 {
+  min-width: 100vw;
+}
+
+.W-100 {
+  width: 100%;
+}
+
+.W\(P380\) {
+  width: 380px;
+}
+
+.W\(P74\) {
+  width: 74px;
+}
+
+.W\(P320\) {
+  width: 320px;
+}
+
+.W\(P97\) {
+  width: 98px;
+}
+
+.W\(P16\) {
+  width: 16px;
+}
+
+.W\(P14\) {
+  width: 14px;
+}
+
+/* ---------------Height--------------- */
+.Min-H-100 {
+  min-height: 100vh;
+}
+
+.H-100 {
+  height: 100%;
+}
+
+.VH-100 {
+  height: 100vh;
+}
+
+.H\(P14\) {
+  height: 14px;
+}
+
+.H\(P300\) {
+  height: 300px;
+}
+
+.H\(P16\) {
+  height: 16px;
+}
+
+.H\(P32\) {
+  height: 32px;
+}
+
+/* ---------------Positioning--------------- */
+.P-relative {
+  position: relative;
+}
+.P-absolute {
+  position: absolute;
+}
+
+/* ---------------Display--------------- */
+.D-Flex {
+  display: flex;
+}
+
+.Fl-row {
+  flex-direction: row;
+}
+
+.Fl-column {
+  flex-direction: column;
+}
+
+.Fl-justify-center {
+  justify-content: center;
+}
+
+.Fl-align-center {
+  align-items: center;
+}
+.Fl-gap\(P6\) {
+  gap: 6px;
+}
+
+.D-None {
+  display: none;
+}
+.D-Block {
+  display: block;
+}
+
+/* ---------------Font Family/Size/Weight--------------- */
+
+.Font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.Fs\(12\) {
+  font-size: 12px;
+}
+.Fs\(14\) {
+  font-size: 14px;
+}
+.Fs\(16\) {
+  font-size: 16px;
+}
+.Fs\(20\) {
+  font-size: 20px;
+}
+.Fs\(24\) {
+  font-size: 24px;
+}
+
+.Fw\(400\) {
+  font-weight: 400;
+}
+.Fw\(600\) {
+  font-weight: 600;
+}
+
+.LH-22 {
+  line-height: 22px;
+}
+
+/* ---------------Colors--------------- */
+
+.Bg-white {
+  background-color: var(--primary-clr);
+}
+
+.Btn-blue {
+  background-color: var(--secondary-clr);
+}
+
+.Text-white {
+  color: var(--primary-clr);
+}
+
+.h\:Btn:hover {
+  background-color: var(--hover-clr);
+}
+
+.a\:Btn:active {
+  background-color: hsla(211, 92%, 44%, 1);
+}
+
+.f\:Btn:focus {
+  background-color: var(--hover-clr);
+}
+
+.h\:Input:hover {
+  border: 1px solid var(--hover-clr);
+}
+
+.f\:Input:focus {
+  border: 1px solid var(--secondary-clr);
+}
+
+.f\:Input-shadow:focus {
+  box-shadow: 0px 0px 4px 0px var(--input-shadow-clr);
+}
+
+/* ---------------Margin/Padding/Border-Radius--------------- */
+.MB\(P40\) {
+  margin-bottom: 40px;
+}
+
+.ML\(P14\) {
+  margin-left: 14px;
+}
+
+.ML\(P16\) {
+  margin-left: 16px;
+}
+
+.MR\(P16\) {
+  margin-right: 16px;
+}
+
+.MT\(P8\) {
+  margin-top: 8px;
+}
+
+.MB\(P8\) {
+  margin-bottom: 8px;
+}
+
+.B\(P2\) {
+  border-radius: 2px;
+}
+
+.B\(50\) {
+  border-radius: 50%;
+}
+
+.B-transparent {
+  border: 2px solid transparent;
+}
+
+.B-T-white {
+  border-top: 2px solid var(--primary-clr);
+}
+
+.PT\(P8\) {
+  padding-top: 8px;
+}
+
+.PB\(P8\) {
+  padding-bottom: 8px;
+}
+
+.PL\(P34\) {
+  padding-left: 34px;
+}
+
+.PL\(P16\) {
+  padding-left: 16px;
+}
+
+.PR\(P16\) {
+  padding-right: 16px;
+}
+
+/* ---------------Border/Outline and Other--------------- */
+.Border-0 {
+  border: none;
+}
+.Border-1 {
+  border: 1px solid var(--input-border-clr);
+}
+
+.Outline-0 {
+  outline: none;
+}
+
+.Shadow-4 {
+  box-shadow: 0px 24px 124px 0px var(--box-shadow-clr);
+}
+
+.Pointer {
+  cursor: pointer;
+}
+
+.Transition {
+  transition: all 0.3s ease-in-out;
+}
+
+.spin-animation {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
