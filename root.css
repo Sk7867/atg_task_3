@@ -46,9 +46,8 @@
 .W\(P16\) {
   width: 16px;
 }
-
-.W\(P14\) {
-  width: 14px;
+.W\(P18\) {
+  width: 18px;
 }
 
 /* ---------------Height--------------- */
@@ -64,16 +63,15 @@
   height: 100vh;
 }
 
-.H\(P14\) {
-  height: 14px;
-}
-
 .H\(P300\) {
   height: 300px;
 }
 
 .H\(P16\) {
   height: 16px;
+}
+.H\(P18\) {
+  height: 18px;
 }
 
 .H\(P32\) {
@@ -170,16 +168,16 @@
   background-color: var(--hover-clr);
 }
 
-.a\:Btn:active {
-  background-color: hsla(211, 92%, 44%, 1);
-}
-
 .f\:Btn:focus {
   background-color: var(--hover-clr);
 }
 
 .h\:Input:hover {
   border: 1px solid var(--hover-clr);
+}
+
+.a\:Btn:active {
+  background: hsla(211, 92%, 44%, 1);
 }
 
 .f\:Input:focus {
@@ -190,29 +188,17 @@
   box-shadow: 0px 0px 4px 0px var(--input-shadow-clr);
 }
 
+.opacity-65 {
+  opacity: 0.65;
+}
+
 /* ---------------Margin/Padding/Border-Radius--------------- */
 .MB\(P40\) {
   margin-bottom: 40px;
 }
 
-.ML\(P14\) {
+.ML\(P12\) {
   margin-left: 14px;
-}
-
-.ML\(P16\) {
-  margin-left: 16px;
-}
-
-.MR\(P16\) {
-  margin-right: 16px;
-}
-
-.MT\(P8\) {
-  margin-top: 8px;
-}
-
-.MB\(P8\) {
-  margin-bottom: 8px;
 }
 
 .B\(P2\) {
@@ -224,11 +210,11 @@
 }
 
 .B-transparent {
-  border: 2px solid transparent;
+  border: 1px solid transparent;
 }
 
 .B-T-white {
-  border-top: 2px solid var(--primary-clr);
+  border-top: 1px solid var(--primary-clr);
 }
 
 .PT\(P8\) {
